@@ -1,5 +1,0 @@
-@font-face {
-font-family: 'MyCustomFont';
-src: url('myfont.ttf') format('truetype');
-}
-h1 { font-family: 'MyCustomFont', sans-serif; }
