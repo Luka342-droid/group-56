@@ -1,0 +1,32 @@
+.container {
+    display: flex; /* Task 1: Create a flex container */
+    flex-direction: row; /* Task 2: Arrange items in a row */
+    justify-content: space-between; /* Task 3: Distribute items evenly with space between */
+    align-items: center; /* Task 6: Align all items to the center */
+    flex-wrap: wrap; /* Task 7: Wrap items when the container is too small */
+    height: 100vh; /* Task 8: Center all items both horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item {
+    flex: 1; /* Task 9: Set all items to have equal width */
+    text-align: center;
+  }
+  
+  .special {
+    flex: 2; /* Task 4: Make one item grow twice as much as others */
+  }
+  
+  .container-reversed {
+    flex-direction: row-reverse; /* Task 5: Reverse the order of items */
+  }
+  
+  .item-bottom {
+    align-self: flex-end; /* Task 6: Align a specific item to the bottom */
+  }
+  
+  .container-column {
+    flex-direction: column; /* Task 10: Change the direction to vertical */
+  }
+  

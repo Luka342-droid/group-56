@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ორმაგი განლაგება</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 50px auto 50px;
+            grid-template-columns: 150px auto;
+            height: 100vh;
+        }
+        .header, .footer {
+            background-color: #00d7f3;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        .menu {
+            background-color: #ff4d4d;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        .content {
+            background-color: #ffb703;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        .header {
+            grid-column: span 2;
+        }
+        .footer {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
