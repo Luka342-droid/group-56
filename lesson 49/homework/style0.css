@@ -1,0 +1,11 @@
+div{
+    width:100px ;
+    height: 100px;
+    background-color: rgb(0, 255, 0);
+    
+
+}
+
+div:hover {
+    background-color: red;
+}

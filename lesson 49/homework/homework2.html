@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 50px;
+        }
+
+        /* 1. Scaling Effect: Image scales up */
+        .scale-image {
+            width: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .scale-image:hover {
+            transform: scale(1.1);
+        }
+
+        /* 2. Text Hover Effect: Gradual color change */
+        .hover-text {
+            font-size: 20px;
+            transition: color 0.5s ease-in-out;
+            color: black;
+        }
+
+        .hover-text:hover {
+            color: blue;
+        }
+
+        /* 3. Border Animation: Border thickness change */
+        .border-box {
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid black;
+            transition: border-width 0.3s ease-in-out;
+        }
+
+        .border-box:hover {
+            border-width: 6px;
+        }
+
+        /* 4. Button Press Effect: Scale down on click */
+        .press-button {
+            padding: 12px 24px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: transform 0.1s ease-in-out;
+        }
+
+        .press-button:active {
+            transform: scale(0.95);
+        }
+
+
+        /* 6. Padding Animation: Increase padding smoothly */
+        .padding-box {
+            display: inline-block;
+            padding: 20px;
+            background-color: green;
+            transition: padding 0.3s ease-in-out;
+        }
+
+        .padding-box:hover {
+            padding: 40px;
+        }
+
+        /* 7. Rotation Effect: Rotate icon slightly */
+        .rotate-icon {
+            font-size: 40px;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .rotate-icon:hover {
+            transform: rotate(15deg);
+        }
+
+        /* 8. Shadow Animation: Increase shadow smoothly */
+        .shadow-card {
+            width: 200px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        .shadow-card:hover {
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>1. Scaling Effect (Image)</h2>
+    <img src="https://via.placeholder.com/200" class="scale-image">
+
+    <h2>2. Text Hover Effect</h2>
+    <p class="hover-text">Hover over this text!</p>
+
+    <h2>3. Border Animation</h2>
+    <div class="border-box">Hover Me</div>
+
+    <h2>4. Button Press Effect</h2>
+    <button class="press-button">Click Me</button>
+
+    <h2>5. No Opacity Transition</h2>
+    <!-- Removed opacity effect here -->
+
+    <h2>6. Padding Animation</h2>
+    <div class="padding-box">Hover Me</div>
+
+    <h2>7. Rotation Effect (Icon)</h2>
+    <div class="rotate-icon">🔄</div>
+
+    <h2>8. Shadow Animation (Card)</h2>
+    <div class="shadow-card">Hover over me</div>
+
+</body>
+</html>
