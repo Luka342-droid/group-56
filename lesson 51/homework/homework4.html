@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Faces</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: gray;
+        }
+        .dice {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .dot {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .one .dot { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .two .dot:nth-child(1) { top: 20%; left: 20%; }
+        .two .dot:nth-child(2) { bottom: 20%; right: 20%; }
+        .three .dot:nth-child(1) { top: 20%; left: 20%; }
+        .three .dot:nth-child(2) { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .three .dot:nth-child(3) { bottom: 20%; right: 20%; }
+        .four .dot:nth-child(1) { top: 20%; left: 20%; }
+        .four .dot:nth-child(2) { top: 20%; right: 20%; }
+        .four .dot:nth-child(3) { bottom: 20%; left: 20%; }
+        .four .dot:nth-child(4) { bottom: 20%; right: 20%; }
+        .five .dot:nth-child(1) { top: 20%; left: 20%; }
+        .five .dot:nth-child(2) { top: 20%; right: 20%; }
+        .five .dot:nth-child(3) { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .five .dot:nth-child(4) { bottom: 20%; left: 20%; }
+        .five .dot:nth-child(5) { bottom: 20%; right: 20%; }
+        .six .dot:nth-child(1) { top: 20%; left: 20%; }
+        .six .dot:nth-child(2) { top: 20%; right: 20%; }
+        .six .dot:nth-child(3) { bottom: 20%; left: 20%; }
+        .six .dot:nth-child(4) { bottom: 20%; right: 20%; }
+        .six .dot:nth-child(5) { top: 50%; left: 20%; transform: translateY(-50%); }
+        .six .dot:nth-child(6) { top: 50%; right: 20%; transform: translateY(-50%); }
+    </style>
+</head>
+<body>
+    <div class="dice one"><div class="dot"></div></div>
+    <div class="dice two"><div class="dot"></div><div class="dot"></div></div>
+    <div class="dice three"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    <div class="dice four"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    <div class="dice five"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    <div class="dice six"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+</body>
+</html>
