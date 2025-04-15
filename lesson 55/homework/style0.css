@@ -1,0 +1,168 @@
+@keyframes left-right {
+    from {
+        left: 0;
+    }
+    to {
+        left: 300px;
+    }
+}
+#div1{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    position: relative;
+    animation: left-right 3s infinite;
+}
+@keyframes to-red{
+    from{
+        background-color: blue;
+        transform: background-color 5s;
+    }
+    to{
+        background-color: red;
+    }
+}
+#div2{
+    width: 100px;
+    height: 100px;
+    animation: to-red 5s infinite 
+}
+@keyframes turn_around{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#div3{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    animation: turn_around 2s linear infinite 
+}
+@keyframes pulse{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(2);
+    }
+}
+#div4{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    animation: pulse 5s infinite;
+}
+@keyframes bounce {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 150px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+#div5 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    background-color: darkmagenta;
+    animation: bounce 3s ease-in-out 3;
+}
+
+@keyframes spinner{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#div6{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    animation: spinner 2s linear infinite;
+}
+@keyframes run_nigger_ruuun{
+    from{
+        left: 0;
+    }
+    to{
+        left: 300px;
+    }
+}
+#div7{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: hotpink;
+    animation: run_nigger_ruuun 3s ease-in-out 1;
+}
+@keyframes delay2s{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(2);
+    }
+}
+#div9{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgb(188, 255, 105);
+    animation: delay2s 3s ease-in-out 1;
+    animation-delay: 2s;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: #3498db;
+    position: relative;
+    animation: n10 1s ease-in-out forwards;
+}
+@keyframes n10 {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    100% {
+        left: 200px;
+        opacity: 1;
+    }
+}
+#div10 {
+    animation-delay: 0s;
+}
+
+#div11 {
+    animation-delay: 0.5s;
+}
+
+#div12 {
+    animation-delay: 1s;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#div13{
+    width: 80px;
+    height: 80px;
+    background-color: #da2f2f;
+    opacity: 1;
+    animation: fadeout 10s ease-in-out forwards;
+}
