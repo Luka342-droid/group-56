@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Homework 2–15</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    section { margin-bottom: 20px; }
+    button { margin: 5px; padding: 8px 12px; }
+    pre { background: #f5f5f5; padding: 10px; border-radius: 5px; white-space: pre-wrap;}
+  </style>
+</head>
+<body>
+  <h1>JS Homework 2–15</h1>
+
+  <section>
+    <h2>2–6: Functions with loops, break, continue</h2>
+    <button onclick="printArgs(1,'a',3,0,5)">Print Args</button>
+    <button onclick="countArgs(1,'a',3,0,5)">Count Args</button>
+    <button onclick="sumArgs(1,'a',3,4)">Sum Numeric Args</button>
+    <button onclick="stopAtZero(1,2,0,3)">Stop at 0</button>
+    <button onclick="skipStrings(1,'a',3,'b')">Skip Strings</button>
+    <pre id="out1"></pre>
+  </section>
+
+  <section>
+    <h2>7–9: Anonymous functions</h2>
+    <button onclick="alert(multiply(3,4))">Multiply 3*4</button>
+    <button onclick="startInterval()">Start Interval</button>
+    <button id="btnClick">Button Click Alert</button>
+    <pre id="out2"></pre>
+  </section>
+
+  <section>
+    <h2>10–12: IIFE</h2>
+    <button onclick="IIFEHello()">Hello World</button>
+    <button onclick="IFEESquare(5)">Square 5</button>
+    <button onclick="IFEESum([1,2,3,4,5])">Sum Array</button>
+    <pre id="out3"></pre>
+  </section>
+
+  <section>
+    <h2>13–15: Scope examples</h2>
+    <button onclick="testLocalVar()">Local Var Access</button>
+    <button onclick="nestedFunctions()">Nested Functions</button>
+    <button onclick="varLetConstScope()">var/let/const Scope</button>
+    <pre id="out4"></pre>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

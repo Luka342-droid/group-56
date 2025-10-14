@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Stats</title>
+  <style>
+    body{
+      background-color: hsl(226, 43%, 10%);
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .Profile{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .NameInfo{
+      background-color: hsl(246, 80%, 60%);
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .State{
+      background-color: hsl(235, 46%, 20%);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .AllStates{
+      display: flex;
+      flex-direction: column;
+      color: hsl(235, 45%, 61%);
+      margin-left: 15px;
+      padding: 15px 0;
+      gap: 10px;
+    }
+
+    .Active{
+      color: white;
+    }
+
+    img{
+      width: 50px;
+      height: 50px;
+      border: 3px solid white;
+      border-radius: 100%;
+      margin-top: 10px;
+    }
+
+    .Profile, .State{
+      width: 130px;
+      height: 350px;
+    }
+
+    .InnerName{
+      margin-left: 15px;
+      color: white;
+      padding-bottom: 15px;
+    }
+
+    .InnerName h2 b{
+      font-size: small;
+    }
+
+    .Box{
+      background-color: hsl(235, 46%, 20%);
+      height: 160px;
+      width: 170px;
+      border-radius: 5px;
+    }
+
+    .Main{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .InnerBox{
+      color: white;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .InnerBox h2{
+      font-size: 45px;
+      margin: 10px 0;
+    }
+
+    .InnerBox b{
+      color: hsl(235, 45%, 61%);
+      margin-top: 15px;
+      font-size: small;
+    }
+
+    .Stats{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 15px;
+    }
+
+    /* Tablet */
+    @media (max-width: 1024px) {
+      .Main {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .Profile {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+      }
+
+      .Profile .NameInfo, .Profile .State {
+        flex: 1;
+        height: auto;
+      }
+
+      .Stats {
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+      }
+
+      .Box {
+        width: 100%;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .Main {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .Profile {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .Stats {
+        grid-template-columns: 1fr;
+      }
+
+      .Box {
+        width: 100%;
+      }
+
+      .InnerBox h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="Main">
+    <div class="Profile">
+      <div class="NameInfo">
+        <div class="InnerName">
+          <img src="./images/image-jeremy.png" alt="">
+          <h2><b>Report for</b> Jeremy Robson</h2>
+        </div>
+      </div>
+      <div class="State">
+        <div class="AllStates">
+          <p>Daily</p>
+          <p class="Active">Weekly</p>
+          <p>Monthly</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="Stats">
+      <div class="Box">
+        <div class="InnerBox">
+          <p>Work</p>
+          <h2>32hrs</h2>
+          <b>Last Week - 36hrs</b>
+        </div>
+      </div>
+      <div class="Box">
+        <div class="InnerBox">
+          <p>Play</p>
+          <h2>10hrs</h2>
+          <b>Last Week - 8hrs</b>
+        </div>
+      </div>
+      <div class="Box">
+        <div class="InnerBox">
+          <p>Study</p>
+          <h2>4hrs</h2>
+          <b>Last Week - 7hrs</b>
+        </div>
+      </div>
+      <div class="Box">
+        <div class="InnerBox">
+          <p>Exercise</p>
+          <h2>4hrs</h2>
+          <b>Last Week - 5hrs</b>
+        </div>
+      </div>
+      <div class="Box">
+        <div class="InnerBox">
+          <p>Social</p>
+          <h2>5hrs</h2>
+          <b>Last Week - 10hrs</b>
+        </div>
+      </div>
+      <div class="Box">
+        <div class="InnerBox">
+          <p>Self Care</p>
+          <h2>2hrs</h2>
+          <b>Last Week - 2hrs</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

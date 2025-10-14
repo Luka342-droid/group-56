@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Testimonials</title>
+  <style>
+    body{
+        background-color: hsl(0, 0%, 81%);
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .Main{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .DJ, .JP{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .LeftPart{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .Daniel{
+        height: auto;
+        max-width: 600px;
+        background-color: hsl(263, 55%, 52%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .upperPart{
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: 10px;
+    }
+    img{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        border: 2px hsla(0, 0%, 81%,0.6) solid;
+    }
+    h2{
+        color: white;
+        margin: 10px 0;
+    }
+    .DanielMain p {
+        color: hsl(0, 0%, 81%);
+    }
+    .Jonathan{
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 5px;
+        padding: 20px;
+        flex: 1;
+    }
+    .JonathanMain p {
+        color: hsl(0, 0%, 81%);
+    }
+    .Jeanette{
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        flex: 1;
+    }
+    .JeanetteIntro{
+        color: black;
+    }
+    .JeanetteMain h2{
+        color: black;
+    }
+    .Patrick{
+        background-color: hsl(219, 29%, 14%);
+        border-radius: 5px;
+        padding: 20px;
+        flex: 2;
+    }
+    .PatrickMain{
+        color: hsl(0, 0%, 81%);
+    }
+    .PatrickMain h2{
+        color: hsl(0, 0%, 81%);
+    }
+    .Kira{
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 300px;
+    }
+    .KiraIntro{
+        color: black;
+    }
+    .KiraMain h2{
+        color: black;
+    }
+    .Kira, .Jonathan, .Patrick, .Daniel, .Jeanette{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 12px, 
+                    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                    rgba(0, 0, 0, 0.09) 0px 2px 4px;
+    }
+
+    @media (max-width: 1024px) {
+      .Main {
+        flex-direction: column;
+        align-items: center;
+      }
+      .DJ, .JP {
+        flex-direction: column;
+        align-items: center;
+      }
+      .Kira {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h2 { font-size: 1rem; }
+      p { font-size: 0.9rem; }
+      .Daniel, .Patrick, .Jeanette, .Jonathan {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="Main">
+    <div class="LeftPart">
+      <div class="DJ">
+        <div class="Daniel">
+          <div class="upperPart">
+            <img src="image-daniel.jpg" alt="">
+            <div><h4>Daniel Clifford <br> Verified Graduate</h4></div>
+          </div>
+          <div class="DanielMain">
+            <h2>I received a job offer mid-course, and the subjects I learned were current.</h2>
+            <p>• I was an EMT before this and had zero coding experience... •</p>
+          </div>
+        </div>
+        <div class="Jonathan">
+          <div class="upperPart">
+            <img src="image-jonathan.jpg" alt="">
+            <div><h4>Jonathan Walters <br> Verified Graduate</h4></div>
+          </div>
+          <div class="JonathanMain">
+            <h2>The team was very supportive and kept me motivated</h2>
+            <p>• I started as a total newbie... •</p>
+          </div>
+        </div>
+      </div>
+      <div class="JP">
+        <div class="Jeanette">
+          <div class="upperPart">
+            <img src="image-jeanette.jpg" alt="">
+            <div class="JeanetteIntro"><h4>Jeanette Harmon <br> Verified Graduate</h4></div>
+          </div>
+          <div class="JeanetteMain">
+            <h2>An overall wonderful and rewarding experience</h2>
+            <p>• Thank you for the wonderful experience... •</p>
+          </div>
+        </div>
+        <div class="Patrick">
+          <div class="upperPart">
+            <img src="image-patrick.jpg" alt="">
+            <div><h4>Patrick Abrams <br> Verified Graduate</h4></div>
+          </div>
+          <div class="PatrickMain">
+            <h2>Awesome teaching support from TAs who did the bootcamp themselves</h2>
+            <p>• The staff seemed genuinely concerned... •</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="RightPart">
+      <div class="Kira">
+        <div class="upperPart">
+          <img src="image-kira.jpg" alt="">
+          <div class="KiraIntro"><h4>Kira Whittle <br> Verified Graduate</h4></div>
+        </div>
+        <div class="KiraMain">
+          <h2>Such a life-changing experience. Highly recommended!</h2>
+          <p>• Before joining the bootcamp, I had never written a line of code... •</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
