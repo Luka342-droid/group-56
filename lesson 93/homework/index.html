@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Check console for results</h1>
+
+<script>
+    // 2-6
+    let expr1 = prompt("Enter a math expression (e.g., 5+3):");
+    alert(eval(expr1));
+
+    let expr2 = prompt("Enter an expression with parentheses (e.g., (8+2)*3):");
+    alert(eval(expr2));
+
+    let expr3 = prompt("Enter a division (e.g., 100/4):");
+    alert(eval(expr3));
+
+    let num = prompt("Enter a number to square:");
+    alert(eval(num + "*" + num));
+
+    let exp = "20-7";
+    alert(eval(exp));
+
+    // 7-11
+    let value = prompt("Enter something:");
+    alert(isNaN(value) ? "Not a number" : "Number");
+
+    let age = prompt("Enter your age:");
+    alert(isNaN(age) ? "Invalid age" : "Valid age");
+
+    let val1 = prompt("Enter first value:");
+    let val2 = prompt("Enter second value:");
+    alert(isNaN(val1) ? "First is not a number" : "First is a number");
+    alert(isNaN(val2) ? "Second is not a number" : "Second is a number");
+
+    let anything = prompt("Type anything:");
+    alert(isNaN(anything) ? "Text" : "Number");
+
+    let n1 = prompt("Enter first number:");
+    let n2 = prompt("Enter second number:");
+    let op = prompt("Enter operator (+, -, *, /):");
+    if (!isNaN(n1) && !isNaN(n2)) {
+      alert(eval(n1 + op + n2));
+    } else {
+      alert("Invalid input");
+    }
+
+    // 12-16
+    let whole = prompt("Enter a whole number (string):");
+    alert(parseInt(whole));
+
+    let w1 = prompt("Enter first whole number:");
+    let w2 = prompt("Enter second whole number:");
+    alert(parseInt(w1) + parseInt(w2));
+
+    let px = prompt('Enter "55px":');
+    alert(parseInt(px));
+
+    let valA = prompt('Enter "20px":');
+    let valB = prompt('Enter "15.9":');
+    alert(parseInt(valA) + parseInt(valB));
+
+    let hex = prompt('Enter "0xF":');
+    alert(parseInt(hex));
+
+    // 17-21
+    let price1 = prompt('Enter first item price (e.g., "19.99"):');
+    let price2 = prompt('Enter second item price (e.g., "5.50"):');
+    alert(parseFloat(price1) + parseFloat(price2));
+
+    let bill = prompt('Enter bill amount (e.g., "45.75"):');
+    let tipPercent = prompt('Enter tip percentage (e.g., "15"):');
+    let tip = parseFloat(bill) * parseFloat(tipPercent)/100;
+    alert("Tip: " + tip + ", Total: " + (parseFloat(bill)+tip));
+
+    let celsius = prompt('Enter temperature in Celsius (e.g., "36.6"):');
+    alert("Fahrenheit: " + (parseFloat(celsius)*9/5 + 32));
+
+    let weight = prompt('Enter weight in kg (e.g., "70.5"):');
+    let height = prompt('Enter height in meters (e.g., "1.75"):');
+    let bmi = parseFloat(weight) / (parseFloat(height)**2);
+    alert("BMI: " + bmi.toFixed(2));
+
+    let distance = prompt('Enter distance traveled in km (e.g., "350.7"):');
+    let fuel = prompt('Enter fuel used in liters (e.g., "28.5"):');
+    let kmPerLiter = parseFloat(distance)/parseFloat(fuel);
+    alert("Km per liter: " + kmPerLiter.toFixed(2));
+</script>
+
+</body>
+</html>
